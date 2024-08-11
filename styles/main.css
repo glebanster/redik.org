@@ -1,0 +1,36 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #000; /* Цвет фона */
+}
+
+.video-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80vw; /* Ширина контейнера 80% от ширины экрана */
+  max-width: 800px; /* Максимальная ширина контейнера */
+  height: 60vh; /* Высота контейнера 60% от высоты экрана */
+  max-height: 450px; /* Максимальная высота контейнера */
+  background-color: #000; /* Цвет фона контейнера */
+  overflow: hidden; /* Обрезка содержимого, если оно выходит за границы контейнера */
+  border-radius: 8px; /* Скругление углов контейнера */
+}
+
+video {
+  width: 100%;
+  height: 100%;
+  object-fit: contain; /* Видео помещается в контейнер, сохраняя пропорции */
+}
